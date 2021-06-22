@@ -18,7 +18,16 @@ jobs:
       run: cat /proc/mounts
 
     - name: Check FileSystem
-      run: df -iPh
+      run: df -h
+
+    - name: Check pvdisplay
+      run: pvdisplay
+
+    - name: Check vgdisplay
+      run: vgdisplay
+    
+    - name: Check lvsdisplay
+      run: lvsdisplay
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
