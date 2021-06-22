@@ -24,7 +24,7 @@ jobs:
       run: ls
 
     - name: Test
-      run: logrotate -d lepetitadmin.con
+      run: logrotate -d lepetitadmin.conf
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
