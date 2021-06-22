@@ -21,7 +21,7 @@ jobs:
       run: df -h
 
     - name: Install logrotate
-      run: apt-get install logrotate
+      run: sudo apt-get install logrotate
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
