@@ -8,7 +8,7 @@ if  grep -q 'rotate 14' $logfile &&
     grep -q 'daily' $logfile &&
     grep -q 'compress' $logfile
 then
-    logrotate -f lepetitadmin.conf
+    logrotate -d lepetitadmin.conf
     if [ $? -eq 0 ]
     then
         echo "ok"
