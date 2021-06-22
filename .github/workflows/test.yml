@@ -14,14 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Check /proc/mounts
-      run: cat /proc/mounts
-
-    - name: Check FileSystem
-      run: df -h
-
     - name: Install logrotate
       run: sudo apt-get install logrotate
+
+    - name: Test
+      run: ls /etc/logrotate.d/
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
