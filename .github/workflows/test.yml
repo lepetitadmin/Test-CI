@@ -21,13 +21,13 @@ jobs:
       run: df -h
 
     - name: Check pvdisplay
-      run: pvdisplay
+      run: sudo pvdisplay
 
     - name: Check vgdisplay
-      run: vgdisplay
+      run: sudo vgdisplay
     
     - name: Check lvsdisplay
-      run: lvsdisplay
+      run: sudo lvsdisplay
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
