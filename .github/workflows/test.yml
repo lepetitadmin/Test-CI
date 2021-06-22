@@ -18,17 +18,7 @@ jobs:
       run: sudo apt-get install logrotate
 
     - name: List Logrotate
-      run: pwd
+      run: chmod 755 test.sh
   
     - name: List Logrotate
-      run: ls
-
-    - name: Test
-      run: logrotate -d lepetitadmin.conf
-
-
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
+      run: ./test.sh
