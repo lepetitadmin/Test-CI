@@ -7,7 +7,7 @@ if  grep -q 'rotate 14' $logfile &&
     grep -q 'compress' $logfile
 then
     logrotate -f lepetitadmin.conf
-    if $? == 0
+    if [ $? == 0 ]
     then
         echo "ok"
         exit 0
