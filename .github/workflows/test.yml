@@ -18,10 +18,10 @@ jobs:
       run: sudo apt-get install logrotate
 
     - name: List Logrotate
-      run: ls /etc/logrotate.d/
+      run: ls /var/log/
 
     - name: Test
-      run: logrotate -d /etc/logrotate.d/apache2
+      run: logrotate -d lepetitadmin.con
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
