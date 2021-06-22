@@ -17,7 +17,13 @@ jobs:
     - name: Install logrotate
       run: sudo apt-get install logrotate
 
-    - name: List Logrotate
+    - name: Mode test
+      run: pwd
+
+    - name: Mode test
+      run: ls -al /var/log
+
+    - name: Mode test
       run: chmod 755 test.sh
   
     - name: List Logrotate
