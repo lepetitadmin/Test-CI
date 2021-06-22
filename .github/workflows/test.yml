@@ -20,14 +20,8 @@ jobs:
     - name: Check FileSystem
       run: df -h
 
-    - name: Check pvdisplay
-      run: sudo pvs
-
-    - name: Check vgdisplay
-      run: sudo vgs
-    
-    - name: Check lvsdisplay
-      run: sudo lvs
+    - name: Install logrotate
+      run: apt-get install logrotate
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
