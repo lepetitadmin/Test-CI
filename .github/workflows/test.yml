@@ -18,7 +18,10 @@ jobs:
       run: sudo apt-get install logrotate
 
     - name: List Logrotate
-      run: ls /var/log/
+      run: pwd
+  
+    - name: List Logrotate
+      run: ls
 
     - name: Test
       run: logrotate -d lepetitadmin.con
