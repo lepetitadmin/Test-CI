@@ -6,7 +6,7 @@ on:
       source:
         description: 'Source Github'     
         required: true
-        default: 'https://github.com/lepetitadmin/Test-CI'
+        default: 'lepetitadmin/challenge-rhel-001'
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ${{ github.event.inputs.source }}
-        path: main
+        path: result
 
     - name: Install logrotate
       run: sudo apt-get install logrotate
