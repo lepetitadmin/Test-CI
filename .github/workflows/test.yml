@@ -19,7 +19,8 @@ jobs:
     - name: Checkout test repo
       uses: actions/checkout@v2
       with:
-        repository: ${{ github.event.inputs.source }}"
+        repository: ${{ github.event.inputs.source }}
+        path: main
 
     - name: Install logrotate
       run: sudo apt-get install logrotate
