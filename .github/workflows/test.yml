@@ -27,6 +27,9 @@ jobs:
 
     - name: Mode test
       run: chmod 755 test.sh
-  
+
+    - name: Lister fichier
+      run: ls -al 
+
     - name: List Logrotate
       run: ./test.sh
