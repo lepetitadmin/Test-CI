@@ -2,13 +2,13 @@
 
 set -x
 
-logfile="lepetitadmin.conf"
+logfile="result/lepetitadmin.conf"
 
 if  grep -q 'rotate 14' $logfile &&
     grep -q 'daily' $logfile &&
     grep -q 'compress' $logfile
 then
-    logrotate -d result/lepetitadmin.conf
+    logrotate -d $logfile
     if [ $? -eq 0 ]
     then
         echo "ok"
